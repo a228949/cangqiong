@@ -97,7 +97,14 @@ public class EmployeeController {
     @ApiOperation(value = "员工启用禁用")
     public Result updateStatus(@PathVariable Integer status, Long id) {
         log.info("员工启用禁用 {},{}", status, id);
-        employeeService.updateStatus(status,id);
+        employeeService.updateStatus(status, id);
         return Result.success();
+    }
+
+    @GetMapping("/{id}")
+    @ApiOperation("根据id查询员工信息")
+    public Result<Employee> getEmployeeById(@PathVariable Long id) {
+        Employee employee = employeeService.getEmployeeById(id);
+        return Result.success(employee);
     }
 }

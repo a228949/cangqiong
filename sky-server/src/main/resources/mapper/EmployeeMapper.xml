@@ -71,4 +71,10 @@
         </where>
         order by create_time desc
     </select>
+    <select id="getEmployeeById" resultType="com.sky.entity.Employee">
+        select * from employee
+        <where>
+            id=#{id};
+        </where>
+    </select>
 </mapper>
