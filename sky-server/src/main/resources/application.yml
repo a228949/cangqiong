@@ -29,6 +29,12 @@ logging:
         service: info
         controller: info
 
+minio:
+  endpoint: ${sky.minio.endpoint}
+  accessKey: ${sky.minio.accessKey}
+  secretKey: ${sky.minio.secretKey}
+  bucketName: ${sky.minio.bucketName}
+
 sky:
   jwt:
     # 设置jwt签名加密时使用的秘钥
