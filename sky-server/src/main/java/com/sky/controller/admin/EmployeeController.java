@@ -92,7 +92,6 @@ public class EmployeeController {
         return Result.success(pageResult);
     }
 
-
     @PostMapping("status/{status}")
     @ApiOperation(value = "员工启用禁用")
     public Result updateStatus(@PathVariable Integer status, Long id) {
