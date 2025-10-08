@@ -6,7 +6,11 @@ sky:
     database: sky_take_out
     username: root
     password: Aa2289496264#@
-
+  redis:
+    host: 192.168.1.188
+    port: 6379
+    password: Aa2289496264#@
+    database: 0
   minio:
     endpoint: http://192.168.1.188:9000
     accessKey: minioadmin
