@@ -16,3 +16,6 @@ sky:
     accessKey: minioadmin
     secretKey: minioadmin
     bucketName: public
+  wechat:
+    appid: wx0610706d76bafee5
+    secret: b229aa902d541c2bc28fc4d152291772
