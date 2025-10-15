@@ -34,4 +34,5 @@ public interface ShoppingCartMapper {
             " values (#{name},#{userId},#{dishId},#{setmealId},#{dishFlavor},#{number},#{amount},#{image},#{createTime})")
     void insert(ShoppingCart shoppingCart);
 
+    void deleteByUserId(Long userId);
 }
